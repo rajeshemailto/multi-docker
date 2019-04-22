@@ -4,7 +4,6 @@ services:
   - docker
 
 before_install:
-  - gem install bundler
   - docker build -t rajeshemailto/muti-docker -f ./client/Dockerfile.dev ./client
 
 script:
